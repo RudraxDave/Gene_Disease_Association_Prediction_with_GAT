@@ -3,22 +3,34 @@
 
 This repository contains the code and data for analyzing gene-disease associations using Graph Neural Networks (GNNs). This project aims to predict gene-disease associations based on protein-protein interaction (PPI) data and additional node features.
 
-![Project Image](images/project_image.png)
+![Project Image](images/GDA.png)
 <!-- Insert a relevant image related to your project here -->
 
 ## Dataset
 
 The dataset used in this project is derived from DisGeNET, a comprehensive gene-disease association database. The dataset includes gene information, disease information, and protein-protein interaction data.
 
+![Data](images/Compare.PNG)
+
 ## Preprocessing
 
 The dataset undergoes preprocessing and preparation before being used for computations. Unnecessary features such as 'stringId_A', 'stringId_B', 'ncbiTaxonId', and 'ID' are dropped, and only the protein-protein interaction data and respective interaction scores are kept. The dataset is a graph, where proteins are nodes and edges indicate the interaction between two proteins.
+How a GENE Network Graph look:   
+![gene](images/gene.png)
+
+How a Protein-Protein Interaction Network look:
+![PPI](images/AGXT1-removebg-preview.png)
+![PPI2](images/AGXT2.png)
 
 ## Models
 
 Two architectures are used in this project: Graph Convolutional Network (GCN)-based architecture and Attention-based architecture. The GCN-based architecture utilizes GraphSAGE, which samples neighborhoods in 'n' hops and aggregates feature information from a node's local neighborhood. The Attention-based architecture uses Graph Attention Networks (GAT), which apply self-attention to each node with every other node in the graph and aggregates features from multiple attention heads.
+![arch](images/ab.drawio(1).png)
+
 
 ## Experimental Setup & Training
+
+![external](images/ax.drawio.png)
 
 A total of 12 models are trained on different datasets and architectures. The training is performed on a single GPU with 12 GB memory. Baseline models such as Random Forest, SVM, and Multi-Layer Perceptron (MLP) are also included for comparison. Negative sampling is performed to handle the heterogeneity of the graph data.
 
