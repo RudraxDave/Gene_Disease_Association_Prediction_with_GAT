@@ -20,7 +20,7 @@ How a GENE Network Graph look:
 
 How a Protein-Protein Interaction Network look:
 ![PPI](images/AGXT1-removebg-preview.png)
-![PPI2](images/AGXT2.png)
+![PPI2](images/AGXT2_1.png)
 
 ## Models
 
