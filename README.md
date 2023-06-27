@@ -15,10 +15,12 @@ The dataset used in this project is derived from DisGeNET, a comprehensive gene-
 ## Preprocessing
 
 The dataset undergoes preprocessing and preparation before being used for computations. Unnecessary features such as 'stringId_A', 'stringId_B', 'ncbiTaxonId', and 'ID' are dropped, and only the protein-protein interaction data and respective interaction scores are kept. The dataset is a graph, where proteins are nodes and edges indicate the interaction between two proteins.
-How a GENE Network Graph look:   
+How a GENE Network Graph look:
+
 ![gene](images/gene.png)
 
 How a Protein-Protein Interaction Network look:
+
 ![PPI](images/AGXT1-removebg-preview.png)
 ![PPI2](images/AGXT2__1.png)
 
