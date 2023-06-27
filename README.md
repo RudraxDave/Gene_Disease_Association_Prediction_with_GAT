@@ -24,7 +24,7 @@ A total of 12 models are trained on different datasets and architectures. The tr
 
 ## Results
 
-The performance of the models is evaluated using metrics such as AUC-ROC, F1 Score, Precision, and Recall. Results are provided for datasets with and without additional node features. Both GraphSAGE and GAT models show improved performance when additional node features are considered. GAT consistently outperforms GraphSAGE and the baseline models, especially when utilizing PPI data.
+The performance of the models is evaluated using metrics such as AUC-ROC, F1 Score, Precision, and Recall. Results are provided for datasets with and without additional node features. GraphSAGE and GAT models improve performance when additional node features are considered. GAT consistently outperforms GraphSAGE and the baseline models, especially when utilizing PPI data.
 
 ### Results (w/o additional node features)
 
@@ -54,9 +54,7 @@ To get started with the project, follow these steps:
 
 1. Clone this repository: `git clone https://github.com/your-username/gene-disease-association.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
-3. Download the dataset from [Data Link](https://example.com/data) and place it in the `data/` directory.
-4. Run the `train.py` script to train the models: `python train.py`
-5. Evaluate the trained models using the `evaluate.py` script: `python evaluate.py`
+3. Download the dataset from [Data Link]((https://doi.org/10.1093/nar/gkw943)) and place it in the `data/` directory.
 
 <!-- Insert any relevant code snippets or instructions here -->
 
