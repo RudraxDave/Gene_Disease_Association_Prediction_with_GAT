@@ -1,6 +1,7 @@
-# Gene-Disease Association Analysis
+# Gene-Disease Association Analysis  
+- From Data to Discovery: A learning architecture for Studying Gene-Disease Association
 
-This repository contains the code and data for analyzing gene-disease associations using Graph Neural Networks (GNNs). The goal of this project is to predict gene-disease associations based on protein-protein interaction (PPI) data and additional node features.
+This repository contains the code and data for analyzing gene-disease associations using Graph Neural Networks (GNNs). This project aims to predict gene-disease associations based on protein-protein interaction (PPI) data and additional node features.
 
 ![Project Image](images/project_image.png)
 <!-- Insert a relevant image related to your project here -->
@@ -11,11 +12,11 @@ The dataset used in this project is derived from DisGeNET, a comprehensive gene-
 
 ## Preprocessing
 
-The dataset undergoes preprocessing and preparation before being used for computations. Unnecessary features such as 'stringId_A', 'stringId_B', 'ncbiTaxonId', and 'ID' are dropped, and only the protein-protein interaction data and respective interaction scores are kept. The dataset is represented as a graph, where proteins are nodes and edges indicate the interaction between two proteins.
+The dataset undergoes preprocessing and preparation before being used for computations. Unnecessary features such as 'stringId_A', 'stringId_B', 'ncbiTaxonId', and 'ID' are dropped, and only the protein-protein interaction data and respective interaction scores are kept. The dataset is a graph, where proteins are nodes and edges indicate the interaction between two proteins.
 
 ## Models
 
-Two architectures are used in this project: Graph Convolutional Network (GCN)-based architecture and Attention-based architecture. The GCN-based architecture utilizes GraphSAGE, which samples neighborhoods in 'n' hops and aggregates feature information from a node's local neighborhood. The Attention-based architecture uses Graph Attention Networks (GAT), which applies self-attention to each node with every other node in the graph and aggregates features from multiple attention heads.
+Two architectures are used in this project: Graph Convolutional Network (GCN)-based architecture and Attention-based architecture. The GCN-based architecture utilizes GraphSAGE, which samples neighborhoods in 'n' hops and aggregates feature information from a node's local neighborhood. The Attention-based architecture uses Graph Attention Networks (GAT), which apply self-attention to each node with every other node in the graph and aggregates features from multiple attention heads.
 
 ## Experimental Setup & Training
 
@@ -70,14 +71,20 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgements
 
 - Darpan Jain
-- Smit Dhakecha
+- Smeet Dhakecha
 
 
 ## References
 
-- DisGeNET: [link-to-disgenet]
-- STRING PPI: [link-to-string-ppi]
-- GCN: [link-to-gcn-paper]
-- GNN: [link-to-gnn-paper]
-- ...
+- DisGeNET : https://doi.org/10.1093/nar/gkw943 
+- STRING PPI: https://doi.org/10.1093/nar/gky1131 
+- GCN: https://arxiv.org/abs/1609.02907
+- IMC: https://doi.org/10.1093/bioinformatics/btu269 
+- GNN: https://doi.org/10.1145/3292500.3330961 
+- geneDRAGNN: https://doi.org/10.1109/CIBCB55180.2022.9863043 
+- Katz, CATAPULT, Node2vec: https://doi.org/10.1371/journal.pone.0058977 
+- PGCN: https://doi.org/10.1101/532226 
+- GediNET: https://doi.org/10.1038/s41598-022-24421-0 
+- GraphSAGE: https://doi.org/10.48550/arXiv.1706.02216 
+- GAT: https://doi.org/10.48550/arXiv.1710.10903 
 
