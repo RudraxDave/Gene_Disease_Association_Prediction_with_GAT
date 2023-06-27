@@ -27,7 +27,7 @@ How a Protein-Protein Interaction Network look:
 ## Models
 
 Two architectures are used in this project: Graph Convolutional Network (GCN)-based architecture and Attention-based architecture. The GCN-based architecture utilizes GraphSAGE, which samples neighborhoods in 'n' hops and aggregates feature information from a node's local neighborhood. The Attention-based architecture uses Graph Attention Networks (GAT), which apply self-attention to each node with every other node in the graph and aggregates features from multiple attention heads.
-![arch](images/ab.drawio(1).png)
+![arch](images/ab_dr.png)
 
 
 ## Experimental Setup & Training
